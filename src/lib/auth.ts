@@ -1,6 +1,19 @@
+import GithubProvider from 'next-auth/providers/github';
 import { GetServerSidePropsContext, NextApiRequest, NextApiResponse } from "next";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { NextAuthOptions, getServerSession } from "next-auth";
+import { PrismaAdapter } from '@auth/prisma-adapter';
+import { prisma } from './prisma';
+import { env } from './env';
+
+export const authOptions : NextAuthOptions = {
+    providers: [
+        GithubProvider({
+            clientId: env.GITHUB_CLIENT,
+            clientSecret: env.GITHUB_SECRET,
+        }),
+    ],
+    adapter: PrismaAdapter(prisma)
+}
 
 type ParamtersGetServerSession =
     | []
