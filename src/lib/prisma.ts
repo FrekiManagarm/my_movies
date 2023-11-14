@@ -2,10 +2,10 @@
 
 import { PrismaClient } from '../../prisma/generated/client';
 
-export const prisma: PrismaClient = new PrismaClient({
+export const prisma: PrismaClient = global.prisma ?? new PrismaClient({
     log: process.env.NODE_ENV === "development"
     ? ['query', 'error', 'warn']
-    : ['error'] 
+    : ['error']
 });
 
 if (process.env.NODE_ENV !== 'production') {
