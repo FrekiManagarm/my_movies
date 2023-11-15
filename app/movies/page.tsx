@@ -1,6 +1,10 @@
 const MoviesPage = () => {
   return (
-    <div>MoviesPage</div>
+    <div className="w-full">
+      <div>
+        
+      </div>
+    </div>
   )
 }
 
