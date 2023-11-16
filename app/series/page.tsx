@@ -1,6 +1,10 @@
+import Hero from "@/components/SeriesPage/Hero"
+
 const SeriesPage = () => {
   return (
-    <div>SeriesPage</div>
+    <>
+      <Hero />
+    </>
   )
 }
 

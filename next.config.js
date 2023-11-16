@@ -7,6 +7,26 @@ const nextConfig = {
         TMDB_API_TOKEN: process.env.TMDB_API_TOKEN,
         TMDB_API_URL: process.env.TMDB_API_URL,
     },
+    images: {
+        remotePatterns: [
+            {
+                hostname: 'i.imgur.com',
+                protocol: "https",
+            },
+            {
+                hostname: "images.unsplash.com",
+                protocol: "https"
+            },
+            {
+                hostname: "avatars.githubusercontent.com",
+                protocol: "https"
+            },
+            {
+                hostname: "www.themoviedb.org",
+                protocol: "https"
+            }
+        ]
+    },
 }
 
 module.exports = nextConfig

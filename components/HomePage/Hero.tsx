@@ -22,8 +22,6 @@ export default function Hero()  {
                         <div className="mt-5 max-w-3xl mb-5">
                             <p className="text-lg text-gray-600 dark:text-gray-400">MyCenter est un site qui regroupe toute les réferences cinématographique, de séries télévisées et d&apos;animés</p>
                         </div>
-
-                        <input type="text" className="text-center text-white shadow-sm focus:shadow-xl py-3 px-4 block w-full border-slate-300 border-2 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Transformers, Friends, Jujutsu Kaisen, ..." />
                     </div>
                 </div>
             </div>

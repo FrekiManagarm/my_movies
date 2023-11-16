@@ -1,10 +1,12 @@
+import Card from "@/components/Card"
+import Hero from "@/components/MoviesListPage/Hero"
+
 const MoviesPage = () => {
   return (
-    <div className="w-full flex flex-col px-2">
-      <div className="">
-        <h3>Top Rated</h3>
-      </div>
-    </div>
+    <>
+      <Hero />
+      <Card />
+    </>
   )
 }
 
